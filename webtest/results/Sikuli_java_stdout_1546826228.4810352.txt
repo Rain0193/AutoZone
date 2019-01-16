@@ -1,0 +1,6 @@
+0 [main] INFO org.robotframework.remoteserver.RemoteServer  - Mapped path / to library com.github.rainmanwy.robotframework.sikulilib.SikuliLibrary.
+2 [main] INFO org.robotframework.remoteserver.RemoteServer  - Robot Framework remote server starting
+2 [main] INFO org.eclipse.jetty.server.Server  - jetty-7.x.y-SNAPSHOT
+61 [main] INFO org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.s.ServletContextHandler{/,null}
+412 [main] INFO org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@0.0.0.0:8335
+412 [main] INFO org.robotframework.remoteserver.RemoteServer  - Robot Framework remote server started on port 8335.

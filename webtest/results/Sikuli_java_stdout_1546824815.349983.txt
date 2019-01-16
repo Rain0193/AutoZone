@@ -1,0 +1,119 @@
+0 [main] INFO org.robotframework.remoteserver.RemoteServer  - Mapped path / to library com.github.rainmanwy.robotframework.sikulilib.SikuliLibrary.
+2 [main] INFO org.robotframework.remoteserver.RemoteServer  - Robot Framework remote server starting
+2 [main] INFO org.eclipse.jetty.server.Server  - jetty-7.x.y-SNAPSHOT
+234 [main] INFO org.eclipse.jetty.server.handler.ContextHandler  - started o.e.j.s.ServletContextHandler{/,null}
+2019-01-07 09:33:39
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.191-b12 mixed mode):
+
+"Service Thread" #9 daemon prio=9 os_prio=0 tid=0x000000001517c800 nid=0x41a8 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C1 CompilerThread2" #8 daemon prio=9 os_prio=2 tid=0x0000000015144800 nid=0x51b4 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread1" #7 daemon prio=9 os_prio=2 tid=0x000000001513f000 nid=0x3814 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #6 daemon prio=9 os_prio=2 tid=0x000000001513b000 nid=0x3020 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" #5 daemon prio=5 os_prio=2 tid=0x00000000164b3800 nid=0x3e64 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=2 tid=0x00000000164b2800 nid=0x3650 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Finalizer" #3 daemon prio=8 os_prio=1 tid=0x0000000002b0b000 nid=0x58e8 in Object.wait() [0x000000001646f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000eb188ed0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	- locked <0x00000000eb188ed0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+"Reference Handler" #2 daemon prio=10 os_prio=2 tid=0x0000000002b00800 nid=0x3a94 in Object.wait() [0x000000001636e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000eb186bf8> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Unknown Source)
+	at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+	- locked <0x00000000eb186bf8> (a java.lang.ref.Reference$Lock)
+	at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+"main" #1 prio=5 os_prio=0 tid=0x000000000290e000 nid=0x56cc runnable [0x0000000002a0a000]
+   java.lang.Thread.State: RUNNABLE
+	at java.util.zip.ZipFile.read(Native Method)
+	at java.util.zip.ZipFile.access$1400(Unknown Source)
+	at java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
+	- locked <0x00000000eb288f00> (a java.util.jar.JarFile)
+	at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(Unknown Source)
+	at java.util.zip.InflaterInputStream.read(Unknown Source)
+	at sun.misc.Resource.getBytes(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	- locked <0x00000000eb8b56a8> (a java.lang.Object)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	- locked <0x00000000eb8b20e0> (a java.lang.Object)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.robotframework.remoteserver.servlet.RemoteServerServlet.newXmlRpcHandlerMapping(RemoteServerServlet.java:91)
+	at org.apache.xmlrpc.webserver.XmlRpcServlet.init(XmlRpcServlet.java:99)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:463)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:283)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	- locked <0x00000000eb6207b0> (a java.lang.Object)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:771)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	- locked <0x00000000eb5ead88> (a java.lang.Object)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:260)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	- locked <0x00000000eb497ef0> (a java.lang.Object)
+	at org.robotframework.remoteserver.RemoteServer.start(RemoteServer.java:311)
+	at com.github.rainmanwy.robotframework.sikulilib.SikuliLibrary.main(SikuliLibrary.java:33)
+
+"VM Thread" os_prio=2 tid=0x00000000150e8000 nid=0x3a14 runnable 
+
+"GC task thread#0 (ParallelGC)" os_prio=0 tid=0x0000000002a27800 nid=0x5ae8 runnable 
+
+"GC task thread#1 (ParallelGC)" os_prio=0 tid=0x0000000002a29000 nid=0x446c runnable 
+
+"GC task thread#2 (ParallelGC)" os_prio=0 tid=0x0000000002a2b000 nid=0x5294 runnable 
+
+"GC task thread#3 (ParallelGC)" os_prio=0 tid=0x0000000002a2d000 nid=0x3a80 runnable 
+
+"VM Periodic Task Thread" os_prio=2 tid=0x0000000016510000 nid=0x3f94 waiting on condition 
+
+JNI global references: 5
+
+Heap
+ PSYoungGen      total 18944K, used 7598K [0x00000000eb180000, 0x00000000ec680000, 0x0000000100000000)
+  eden space 16384K, 46% used [0x00000000eb180000,0x00000000eb8eb870,0x00000000ec180000)
+  from space 2560K, 0% used [0x00000000ec400000,0x00000000ec400000,0x00000000ec680000)
+  to   space 2560K, 0% used [0x00000000ec180000,0x00000000ec180000,0x00000000ec400000)
+ ParOldGen       total 44032K, used 0K [0x00000000c1400000, 0x00000000c3f00000, 0x00000000eb180000)
+  object space 44032K, 0% used [0x00000000c1400000,0x00000000c1400000,0x00000000c3f00000)
+ Metaspace       used 5592K, capacity 6026K, committed 6144K, reserved 1056768K
+  class space    used 669K, capacity 690K, committed 768K, reserved 1048576K
+
+1474 [main] INFO org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@0.0.0.0:5111
+1474 [main] INFO org.robotframework.remoteserver.RemoteServer  - Robot Framework remote server started on port 5111.

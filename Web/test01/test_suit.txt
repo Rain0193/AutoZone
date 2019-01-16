@@ -1,0 +1,14 @@
+*** Settings ***
+
+
+Library           Selenium2Library
+
+*** Variables ***
+
+${picture_path}      F:\AutoTestPlat\AutoTestPlat\webtest\media\
+*** Test Cases ***
+
+test006
+	open browser	https://www.baidu.com/	chrome
+	sleep	3
+	input text	id=kw	python
